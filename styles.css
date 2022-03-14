@@ -1,0 +1,362 @@
+/* --- Holberton CSS ---/*
+
+/* Importing webfonts */
+/* (If you're learning CSS, you should disregard that) */ 
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+@import url(https://fonts.googleapis.com/css?family=Bangers:400,700,700italic,400italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*---My Menu -*/
+.menu {
+    display: inline-flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    justify-content: space-around;/* Alignements des liens dans le menu */
+    text-align: center;
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */   
+    
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */   
+    background-color: #1ABC9C;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {    
+    background-color: #000 ; 
+    color: #1ABC9C ;
+    border-color: #1ABC9C ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #ed2794;
+    color: #ffe843;
+    border-color: #ffe843;
+}
+
+/* CSS reset rules */
+
+html {
+    background-image: url(/icons/thebatman2021redlogo.jpg);
+    background-size: cover ;
+}
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    
+   
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Fonts and colors */
+
+body {
+    font-family: Times New Roman, sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+}
+h1, h2, h3, h4, h5, h6, header {
+    font-family: Bangers;
+}
+p {
+    text-align: justify;
+
+}
+
+/*--balise première page orange-- */
+.exciting {
+    background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+    border: 1px solid #696969;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+}
+
+.exciting:before {
+    content: "ℹ️";
+    margin-right: 5px;
+}
+
+
+header {
+    border-bottom: 0px solid rgb(221,221,221);
+    transition: border-bottom-color 1s ease;
+}
+header a {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+aside p {
+    border: 1px solid #bbb;
+    background: #ddd;
+    color: black;
+}
+footer a {
+    color: rgba(0, 0, 0, 0.8);
+}
+a {
+    color: #F80002;
+}
+
+
+/* Positioning and margins */
+
+@media (min-width: 1100px) {
+    body {
+        width: 1100px;
+        margin: 0 auto;
+    }
+}
+
+article {
+    padding: 50px 15px;
+}
+article > *:first-child {
+    margin-top: 0;
+}
+aside {
+    padding: 50px 15px;
+}
+header .right {
+    float: right;
+    margin: 0 10px 15px;
+}
+
+
+/* Header */
+header {
+    padding: 20px 0;
+    height: auto;
+    text-align: center;
+}
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header li {
+    display: inline;
+    vertical-align:middle;
+}
+header li:first-child {
+    margin: 0;
+}
+header li a {
+    margin: 0 10px;
+}
+header li.logo {
+    font-size: 36px;
+}
+header a {
+    text-decoration: none;
+}
+
+
+/* Aside */
+
+aside p {
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 5px 15px;
+    height: 80px;
+}
+
+
+/* Text styles and margins */
+
+p {
+    margin-bottom: 15px;
+}
+h1 {
+    font-size: 36px;
+    margin: 40px 0 20px;
+}
+h2 {
+    font-size: 32px;
+    margin: 30px 0 15px;
+}
+h3 {
+    font-size: 28px;
+    margin: 25px 0 10px;
+}
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+
+@media screen and (max-width: 480px){
+  body.works_on_smartphone {
+    display: block;
+  }
+  body.works_on_smartphone main {
+    display: block;
+  }
+  header .right {
+    float: none;
+  }
+
+.video-responsive { 
+    overflow:hidden; 
+    padding-bottom:56.25%; 
+    position:relative; 
+    height:0;
+}
+
+.video-responsive iframe {
+    left:0; 
+    top:0; 
+    height:100%; 
+    width:100%; 
+    position:absolute;}
+}
+
+/* image JS challenge */
+
+img {
+    max-width: 100%;
+}
+
+img.small {
+    width: 100px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; 
+}
+
+
+article {
+    flex: 2;
+    font-size: large;
+    margin: auto;
+}
+ 
+   aside {
+    flex: 1;
+    overflow-y: auto;
+}
+
+article, aside {
+
+    overflow-y: auto;
+}
+
+.right{
+    float: right;
+}
+
+.fb-share-button, .twitter-share-button {
+    float: right;
+    margin: 0 10px 15px;
+}
+
+
+footer {
+    display: flex;
+    font-family: Bangers;
+    justify-content: center;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+
+
+    /* image JS challenge */
+
+img {
+    max-width: 100%;
+}
+
+img.small {
+    width: 100px;
+}
+
+#disqus_thread {
+color: #fff;
+background-color: #778899;
+} 
+
+.container {
+
+width: 90%;
+margin: 0 1em;
+background-color: #FFFFFF;
+
+
+
+}
