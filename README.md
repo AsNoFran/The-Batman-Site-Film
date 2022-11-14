@@ -1,4 +1,4 @@
-# The Batman - Test admission School
+# The Batman - Site Infos
 
 Here is a project I made for my admission test to a coding school.
 This site was created by myself from my own knowledge.
